@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  server:
+    image: postgres:10.10
+    ports:
+      - 5432:5432
+    volumes:
+      - ./:/root
+      - data:/var/lib/postgresql/data
+
+volumes:
+  data:
+      
